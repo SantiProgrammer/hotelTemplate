@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosemary Dream</title>
+    <!-- Bootstrap-css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Google-font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Style-css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Jquery-js-->   
+    <script defer src="js/jquery-3.5.1.js"></script> 
+    <!-- Main-js -->
+    <script defer src="js/reserva.js"></script>
+    <script defer src="js/room.js"></script>
+    <!-- <script defer src="js/main.js"></script> -->
+</head>
+<body>
+    <header class="bg-header bg-img">
+      <nav class="navbar navbar-expand-lg bg-color sticky-top">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="images/logo1.png" class="logo d-inline-block align-top" alt="logo" loading="lazy"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-center mr-auto ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>               
+          </ul>
+          <form class="form-inline">
+            <button class="btn btn-outline-success" type="submit">Login</button>
+          </form>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="section-title-room">
+                <h5>OUR ROOM</h5>
+                <h2>Book now!</h2>
+            </div>
+        </div>
+      </div>
+    </header>
+    <!-- Rooms Area Begin -->
+    <div class="section-padding-100-0">
+      <div class="container">
+        <div class="row">
+         
+          <div class="col-12 col-lg-8">          
+            <!-- Single Room Area -->
+            <div class="single-room-area d-flex align-items-center">
+              <div class="room-thumbnail">
+                <a href=""><img src="images/room/standar-1.jpg" alt=""></a>
+              </div>
+              <!-- Room Content -->
+              <div class="room-content">
+                <h2>Standard Room</h2>
+                <h4>$1000 <span>/ Night</span></h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quod, culpa qui necessitatibus fugiat sequi debitis.</h6> 
+                <a href="#">View Details</a>
+                <button onclick="book(1)" class="btn btn-room">Book</button>
+              </div>
+            </div>
+            <!-- Single Room Area End-->
+
+            <!-- Single Room Area -->
+            <div class="single-room-area d-flex align-items-center">
+              <!-- Room Thumbnail -->
+              <div class="room-thumbnail">
+                <a href=""><img src="images/room/superior.jpg" alt=""></a>
+              </div>
+              <!-- Room Content -->
+              <div class="room-content">
+                <h2>Superior Room</h2>
+                <h4>$1500 <span>/ Night</span></h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quod, culpa qui necessitatibus fugiat sequi debitis.</h6>
+                <a href="#">View Details</a>
+                <button onclick="book(2)" class="btn btn-room">Book</button>
+              </div>
+            </div>
+            <!-- Single Room Area End-->
+
+            <!-- Single Room Area -->
+            <div class="single-room-area d-flex align-items-center">
+              <!-- Room Thumbnail -->
+              <div class="room-thumbnail">
+                <a href=""><img src="images/room/especial.jpg" alt=""></a>
+              </div>
+              <!-- Room Content -->
+              <div class="room-content">
+                <h2>Especial Room</h2>
+                <h4>$2000 <span>/ Night</span></h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quod, culpa qui necessitatibus fugiat sequi debitis.</h6> 
+                <a href="#">View Details</a>
+                <button onclick="book(3)" class="btn btn-room">Book</button>
+              </div>
+            </div>
+            <!-- Single Room Area End-->
+
+            <!-- Single Room Area -->
+            <div class="single-room-area d-flex align-items-center">
+              <!-- Room Thumbnail -->
+              <div class="room-thumbnail">
+                <a href=""><img src="images/room/suit.jpg" alt=""></a>
+              </div>
+              <!-- Room Content -->
+              <div class="room-content">
+                <h2>Suit Room</h2>
+                <h4>$2500 <span>/ Night</span></h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quod, culpa qui necessitatibus fugiat sequi debitis.</h6> 
+                <a href="#">View Details</a>
+                <button onclick="book(4)" class="btn btn-room">Book</button>
+              </div>
+            </div>
+            <!-- Single Room Area End-->
+          </div>
+          <!-- Hotel Reservation Area -->
+          <div class="col-12 col-lg-4 st">
+            <div id="hotel-reservation" class="reservation-area ">
+                <h5 class="card-title">Your stay</h5>
+                <div class="row d-flex justify-content-between mx-2">
+                  <p class="card-text" id="check-in-p">Check in:<br>
+                    <span class="card-text-sub">After 3:00 pm</span>
+                  </p>
+                  <p class="card-text" id="check-out-p">Check out:<br>
+                    <span class="card-text-sub">Before 12:00 pm</span>
+                  </p>
+                </div>
+                <div class="form-group mx-2">
+                  <p class="card-text" id="pasajero-select">Guests:</p> 
+                </div>
+                <p class="text-total mx-2" id="valor-total"></p> 
+               <button id="booking" type="submit" class="btn btn-room invisible">Continue to book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- Rooms Area End -->
+
+    <!-- Contact Form Begin -->
+    <div id="contact-form" class="container mb-5">
+      <h3 id="titulo-reserva"></h3>
+      <form action="thank.html" method="post" enctype="multipart/form-data">
+        <!-- Contact Information -->
+        <div class="col my-3">
+          <div class="card">
+              <div class="card-body ">
+                <div class="d-flex justify-content-center align-content-center">
+                  <div class="col-6">
+                    <h5 class="mb-4">Contact Information</h5>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <label for="name">First Name*</label>
+                            <input type="text" class="form-control form-control-sm" id="name" placeholder="" required>
+                        </div>
+                        <div class="col">
+                            <label for="last-name">Last Name*</label>
+                            <input type="text" class="form-control form-control-sm" id="last-name" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" class="form-control form-control-sm" id="phone" placeholder="" required>
+                        </div>
+                        <div class="col">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control form-control-sm" id="email" placeholder="" required> 
+                            <small id="emailHelp" class="email-help form-text text-muted">This is the email we will send your confirmation to.</small>
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" class="form-control form-control-sm"></input>   
+                        </div>
+                        <div class="col">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control form-control-sm" id="city">
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control form-control-sm" id="address">
+                        </div>
+                        <div class="col">
+                            <label for="postal-code">Postal Code</label>
+                            <input type="number" class="form-control form-control-sm" id="postal-code">
+                        </div>
+                    </div>
+                    <div class="form-row mb-2 mt-3">
+                        <div class="col">
+                            <label for="message">Additional Details and Preferences</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Please note your requests or special needs"></textarea>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <h5 class="mb-4">Payment information</h5>
+                    <div class="form-row mb-2">
+                      <div class="col">
+                          <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+                              <li class="nav-item">
+                                  <a class="nav-link" data-toggle="pill" href="#nav-tab-card">
+                                  <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                              <li class="nav-item">
+                                  <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                                  <i class="fab fa-paypal"></i>Paypal</a></li>
+                              <li class="nav-item">
+                                  <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+                                  <i class="fa fa-university icon"></i>Bank Transfer</a></li>
+                          </ul>
+                      </div>
+                    </div>
+
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <label for="username">Full name (on the card)</label>
+                            <input type="text" class="form-control form-control-sm" name="username" required> 
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <label for="cardNumber">Card number</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-sm" name="cardNumber" required>
+                        </div>
+                    </div> 
+
+                    <div class="form-group mb-2">
+                        <label><span class="hidden-xs">Expiration</span> </label>
+                        <div class="input-group">
+                            <input type="number" class="form-control form-control-sm" placeholder="MM" name="" required>
+                            <input type="number" class="form-control form-control-sm" placeholder="YY" name="" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                        <input type="number" class="form-control form-control-sm" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row my-3 d-flex justify-content-end">
+                  <div class="col-6 ">
+                      <input class="btn btn-room btn-block" type="reset" value="Delete data">
+                      <button class="btn btn-room btn-block" type="submit"> Confirm booking</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer bg-color">
+      <div class="row">
+        <div class="col-12 d-flex flex-column  align-items-center">
+          <a href="#"><img src="images/logo1.png" class="logo-footer" alt="logo"></a>
+          <p class="text-footer">© 2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+   <!-- Popper-js-->
+   <script src="js/popper.min.js"></script> 
+   <!-- Bootstrap-js-->
+   <script type="text/javascript" src="js/bootstrap.js"></script>  
+</body>
+</html>

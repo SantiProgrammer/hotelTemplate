@@ -1,0 +1,325 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  font-family: 'Roboto', sans-serif;
+  color: #3e5905;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.bg-color{
+  background-color: #3e59058c;
+}
+.logo{
+  width: 85px;
+  height: auto;
+}
+a:link{
+  font-size: 16px;
+  color:#EBF2D0;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited{
+  color: #EBF2D0;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{ color: #77BDD9; }
+
+
+/* Home */
+.main-home{
+  width: 100%;
+  margin-bottom: 14%;
+  padding-top: 70px;
+}
+.bg-image{
+  background-image: url("../images/index/bg.png");
+  background-repeat: no-repeat;
+}
+.titulo{
+  color: whitesmoke;
+  font-size: 70px;
+  margin: 0;
+}
+.welcome{
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 50px 0px 0px;
+}
+
+/* Search Form Section */
+.search-form{
+  margin: 4% 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.bg-form{
+  background-color: whitesmoke;
+  width: 100%;
+  height: 5.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 10px 18px #3e59058c; 
+}
+
+/* About Section */
+#about{
+  margin-bottom: 10%;
+}
+.section-about{
+  margin-bottom: 30px; 
+}
+.section-about h6{
+  margin-bottom: 10px;
+  color: #77BDD9; 
+}
+
+/*  Services Section  */ 
+#services{
+  margin-bottom: 10%;
+}
+.services-svg{
+  width: 50px;
+  height: 36px;
+  margin: 5px 0;
+}
+.services-text{
+  font-size: 14px;
+}
+
+/* Home Room Section */
+#room{
+  margin-bottom: 5%;
+}
+.section-title{
+  margin-bottom: 55px;
+  text-align: center;
+}
+.section-title h5{
+  color: #77BDD9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.section-title h2{
+  font-size: 44px;
+}
+.room-item{
+  width: 320px;
+  height: 490px;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.room-title {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 0 25px;
+  margin-top: -120px;
+}
+.room-title h4{
+  font-size: 28px;
+  color:#fabb5a;
+  text-shadow: 2px 2px 2px #7a4f0e;
+  margin-bottom: 5px;
+}
+.room-title h2{
+  font-size: 20px;
+  color: #fabb5a;
+  position: relative;
+}
+.room-item a{
+  font-size: 18px;
+  color:  #77BDD9;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  left: 25px;
+  bottom: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all, 0.5s;
+}
+.room-item:hover a{
+  bottom: 32px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Testimonial Section */
+#testimonial{
+  margin-bottom: 5%;
+}
+.card-text-testimonial{
+  font-size: 15px;
+}
+.card-i-testimonial i{
+  font-size: 15px;
+  color:#fabb5a;
+}
+.card-title-testimonial{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
+  color:  #77BDD9;
+}
+.card-city-testimonial{
+  font-size: 15px;
+  color:  #77BDD9;
+}
+
+/* Contact Section */
+.contact-bg{
+  background-image: url("../images/index/761523457.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-title-contact{
+  width: 70%;
+  margin-bottom: 55px;
+  text-align: left;
+}
+.section-title-contact h5{
+  color: #77BDD9;
+  text-shadow: 2px 2px 3px #6aaac3;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.section-title-contact h2{
+  font-size: 40px;
+  color:#ffffff;
+  text-shadow: 2px 2px 3px #c78b32;
+}
+
+/* Footer Section */
+.logo-footer{
+  margin: 15px 0 5px;
+  width: 100px;
+  height: auto;
+}
+.text-footer{
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* Room */
+.card-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-text{
+  font-size: 15px;
+}
+.card-text-sub{
+  font-size: 12px;
+  color:  #fabb5a;
+}
+.text-total{
+  font-weight: bold;
+}
+.bg-header{
+  background-image: url("../images/room/suit-bg.jpg");
+  background-position: center;
+}
+.bg-img{
+  min-height: 377px;
+}
+
+/*  Rooms Area */
+.section-title-room{
+  margin: 150px 0 10px;
+  text-align: center;
+  color: #f3f3f3;
+}
+.section-title-room h5{
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.section-title-room h2{
+  font-size: 64px;
+  text-shadow: 2px 2px 3px #c78b32;
+}
+.section-padding-100-0 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.single-room-area{
+  margin: 25px 0;
+}
+.room-thumbnail img {
+  width: 300px;
+  border-radius: 4px;
+}
+.room-content{
+  margin: 15px 20px;
+}
+.room-content h2{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.room-content h4{
+  font-size: 18px;
+  color: #1cc3b2;
+  margin-bottom: 20px;
+}
+.room-content h6{
+  width: 50%;
+  font-size: 15px;
+  color: #475034;
+  margin-bottom: 20px;
+}
+.room-content a{
+  display: block;
+  padding-bottom: 10px;
+  color: #fabb5a;
+}
+.btn-room{
+  padding: 5px 8px;
+  font-size: 20px;
+  color: #77BDD9;
+  background-color: #fff;
+  border-color: #77BDD9;
+}
+.btn-room:hover {
+  color: #fff;
+  background-color: #77BDD9;
+  border-color: #77BDD9;
+}
+.reservation-area{
+  padding: 20px;
+  border:0.5px solid #faba5a9d;
+  border-radius: 5px;
+}
+
+/* Form Reservation */
+.email-help{
+  font-size: 14px;
+}
+.nav-pills .nav-link {
+  color: #3e5905;
+  background-color: whitesmoke;
+}
+
+.bg-header-thank{
+  background-image: url("../images/thank.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.thank-title{
+  color:#c78b32;
+  font-size: 25px;
+  text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
